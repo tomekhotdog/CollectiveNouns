@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey" >
+    
+    <Button
+        android:id="@+id/randomTest"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="randomTest"
+        android:text="@string/random_test"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/blueP"
+        android:padding="10dp"
+        android:layout_margin="10dp" />
+    
+    <TextView 
+        android:id="@+id/achieved_text"
+        style="@style/Text_Exercise_Label"
+        android:padding="5dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/achieved" />
+    
+    <LinearLayout
+        style="@style/achieved_container"
+        android:orientation="vertical"
+        android:background="@color/lightgreen"
+        android:layout_margin="10dp" >
+        
+        <LinearLayout
+            style="@style/achieved_container">
+            
+            <TextView
+                style="@style/achievement_text"
+                android:text="@string/platinum" />
+            <TextView
+                android:id="@+id/platinum_achieved"
+                style="@style/achievement_text"
+                android:text="@string/example_score" />          
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            style="@style/achieved_container">
+            
+            <TextView
+                style="@style/achievement_text"
+                android:text="@string/green" />
+            <TextView
+                android:id="@+id/green_achieved"
+                style="@style/achievement_text"
+                android:text="@string/example_score" />          
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            style="@style/achieved_container">
+            
+            <TextView
+                style="@style/achievement_text"
+                android:text="@string/amber" />
+            <TextView
+                android:id="@+id/amber_achieved"
+                style="@style/achievement_text"
+                android:text="@string/example_score" />          
+            
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+    
+    	<ImageView
+    	    android:id="@+id/logo_image"
+    	    android:layout_width="150dp" 
+    	    android:layout_height="150dp"
+    	    android:layout_gravity="center"
+    	    android:contentDescription="@string/logo_desc"
+    	    android:src="@drawable/ic_launcher"
+    	    android:layout_margin="15dp" />   
+
+</LinearLayout>
+<!-- From: file:/Users/tomasz/Documents/CollectiveNouns/CollectiveNouns/res/layout/fragment_home.xml -->

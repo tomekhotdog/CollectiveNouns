@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/horizontal_container"
+            android:layout_height="0dp"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/people1Learn"
+                style="@style/learn"
+                android:onClick="learnPeople1"
+                android:contentDescription="@string/learn_desc" />
+            
+            <ImageView
+                android:id="@+id/people1"
+                style="@style/exercise_picture"
+                android:contentDescription="@string/animals_desc"
+                android:src="@drawable/peopleorange" />
+        	
+            <ImageView
+                android:id="@+id/people1Test"
+                style="@style/test"
+                android:onClick="testPeople1"
+                android:contentDescription="@string/test_desc" />
+            
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/peopleIText"
+            style="@style/Text_Exercise_Label"
+            android:text="@string/peopleI"            
+            />
+        
+        <ImageView 
+            android:id="@+id/partition1"
+            android:contentDescription="@string/partition_desc"
+            style="@style/Partition"
+            />
+        
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:baselineAligned="false"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+                                
+        		<LinearLayout
+           	 		style="@style/horizontal_container"
+           	 		android:layout_height="0dp"
+           	 		android:layout_weight="1.0" >
+
+            		<ImageView
+                		android:id="@+id/object1Learn"
+                		android:onClick="learnObject1"
+                		android:contentDescription="@string/learn_desc"
+                		style="@style/learn" />
+            
+            		<ImageView
+    	    			android:id="@+id/object1"
+    	    			style="@style/exercise_picture"
+    	    			android:contentDescription="@string/objects_desc"
+        				android:src="@drawable/objectorange" /> 
+        	
+            		<ImageView
+    	    			android:id="@+id/object1Test"
+    	    			android:onClick="testObject1"
+    	        		android:contentDescription="@string/test_desc"
+    	    			style="@style/test" /> 
+            
+        		</LinearLayout>
+        		        		
+        		<TextView
+            		android:id="@+id/object1Text"
+            		style="@style/Text_Exercise_Label"
+            		android:text="@string/objectsI"            
+           		 />
+        		
+            </LinearLayout>
+            
+            <ImageView 
+            android:id="@+id/partitionV1"
+            android:contentDescription="@string/partition_desc"
+            style="@style/Partition_vertical"
+            />
+        		
+        	<LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+        
+         		<LinearLayout
+           	 		style="@style/horizontal_container"
+           	 		android:layout_height="0dp"
+           	 		android:layout_weight="1.0" >
+
+            		<ImageView
+                		android:id="@+id/animal1Learn"
+                		android:onClick="learnAnimal1"
+                		android:contentDescription="@string/learn_desc"
+                		style="@style/learn" />
+            
+            		<ImageView
+    	    			android:id="@+id/animal1"
+    	    			style="@style/exercise_picture"
+    	    			android:contentDescription="@string/people_desc"
+        				android:src="@drawable/animalorange" /> 
+        	
+            		<ImageView
+    	    			android:id="@+id/animal1Test"
+    	    			android:onClick="testAnimal1"
+    	        		android:contentDescription="@string/test_desc"
+    	    			style="@style/test" /> 
+            
+        		</LinearLayout>
+        		        		
+        		<TextView
+            		android:id="@+id/animal1Text"
+            		style="@style/Text_Exercise_Label"
+            		android:text="@string/animalsI"            
+           		 />
+        		
+            </LinearLayout>
+        		     		
+       	</LinearLayout>
+       	
+        <ImageView 
+            android:id="@+id/partition2"
+            android:contentDescription="@string/partition_desc"
+            style="@style/Partition"
+            />
+        
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:baselineAligned="false"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+                                
+        		<LinearLayout
+           	 		style="@style/horizontal_container"
+           	 		android:layout_height="0dp"
+           	 		android:layout_weight="1.0" >
+
+            		<ImageView
+                		android:id="@+id/people2Learn"
+                		android:onClick="learnPeople2"
+                		android:contentDescription="@string/learn_desc"
+                		style="@style/learn" />
+            
+            		<ImageView
+    	    			android:id="@+id/people2"
+    	    			style="@style/exercise_picture"
+    	    			android:contentDescription="@string/animals_desc"
+        				android:src="@drawable/peopleorange" /> 
+        	
+            		<ImageView
+    	    			android:id="@+id/people2Test"
+    	    			android:onClick="testPeople2"
+    	        		android:contentDescription="@string/test_desc"
+    	    			style="@style/test" /> 
+            
+        		</LinearLayout>
+        		        		
+        		<TextView
+            		android:id="@+id/people2Text"
+            		style="@style/Text_Exercise_Label"
+            		android:text="@string/peopleII"            
+           		 />
+        		
+            </LinearLayout>
+            
+            <ImageView 
+            android:id="@+id/partitionV2"
+            android:contentDescription="@string/partition_desc"
+            style="@style/Partition_vertical"
+            />
+        		
+        	<LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+        
+         		<LinearLayout
+           	 		style="@style/horizontal_container"
+           	 		android:layout_height="0dp"
+           	 		android:layout_weight="1.0" >
+
+            		<ImageView
+                		android:id="@+id/animal2Learn"
+                		android:onClick="learnAnimal2"
+                		android:contentDescription="@string/learn_desc"
+                		style="@style/learn" />
+            
+            		<ImageView
+    	    			android:id="@+id/animal2"
+    	    			style="@style/exercise_picture"
+    	    			android:contentDescription="@string/people_desc"
+        				android:src="@drawable/animalorange" /> 
+        	
+            		<ImageView
+    	    			android:id="@+id/animal2Test"
+    	    			android:onClick="testAnimal2"
+    	        		android:contentDescription="@string/test_desc"
+    	    			style="@style/test" /> 
+            
+        		</LinearLayout>
+        		        		
+        		<TextView
+            		android:id="@+id/animal2Text"
+            		style="@style/Text_Exercise_Label"
+            		android:text="@string/animalsII"            
+           		 />
+        		
+            </LinearLayout>
+        		     		
+       	</LinearLayout>
+       	
+        <ImageView 
+            android:id="@+id/partition3"
+            android:contentDescription="@string/partition_desc"
+            style="@style/Partition"
+            />
+      
+            <LinearLayout
+            	android:layout_height="wrap_content"
+            	android:layout_width="wrap_content"
+            	android:baselineAligned="false"
+            	android:layout_gravity="center"
+            	android:orientation="horizontal">
+            
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+                                
+        		<LinearLayout
+           	 		style="@style/horizontal_container"
+           	 		android:layout_height="0dp"
+           	 		android:layout_weight="1.0" >
+
+            		<ImageView
+                		android:id="@+id/people3Learn"
+                		android:onClick="learnPeople3"
+                		android:contentDescription="@string/learn_desc"
+                		style="@style/learn" />
+            
+            		<ImageView
+    	    			android:id="@+id/people3"
+    	    			style="@style/exercise_picture"
+    	    			android:contentDescription="@string/people_desc"
+        				android:src="@drawable/peopleorange" /> 
+        	
+            		<ImageView
+    	    			android:id="@+id/people3Test"
+    	    			android:onClick="testPeople3"
+    	        		android:contentDescription="@string/test_desc"
+    	    			style="@style/test" /> 
+            
+        		</LinearLayout>
+        		        		
+        		<TextView
+            		android:id="@+id/people3Text"
+            		style="@style/Text_Exercise_Label"
+            		android:text="@string/peopleIII"            
+           		 />
+        		
+            </LinearLayout>
+            
+            <ImageView 
+            android:id="@+id/partitionV3"
+            android:contentDescription="@string/partition_desc"
+            style="@style/Partition_vertical"
+            />
+        		
+        	<LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+        
+         		<LinearLayout
+           	 		style="@style/horizontal_container"
+           	 		android:layout_height="0dp"
+           	 		android:layout_weight="1.0" >
+
+            		<ImageView
+                		android:id="@+id/object2Learn"
+                		android:onClick="learnObject2"
+                		android:contentDescription="@string/learn_desc"
+                		style="@style/learn" />
+            
+            		<ImageView
+    	    			android:id="@+id/object2"
+    	    			style="@style/exercise_picture"
+    	    			android:contentDescription="@string/objects_desc"
+        				android:src="@drawable/objectorange" /> 
+        	
+            		<ImageView
+    	    			android:id="@+id/object2Test"
+    	    			android:onClick="testObject2"
+    	        		android:contentDescription="@string/test_desc"
+    	    			style="@style/test" /> 
+            
+        		</LinearLayout>
+        		        		
+        		<TextView
+            		android:id="@+id/object2Text"
+            		style="@style/Text_Exercise_Label"
+            		android:text="@string/objectsII"            
+           		 />
+        		
+            </LinearLayout>
+        		     		
+       	</LinearLayout>
+       	
+        <ImageView 
+            android:id="@+id/partition4"
+            android:contentDescription="@string/partition_desc"
+            style="@style/Partition"
+            />
+      
+        <LinearLayout
+            style="@style/horizontal_container"
+            android:layout_height="0dp"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/object3Learn"
+                android:onClick="learnObject3"
+                style="@style/learn"
+                android:contentDescription="@string/learn_desc" />
+            
+            <ImageView
+                android:id="@+id/object3"
+                style="@style/exercise_picture"
+                android:contentDescription="@string/objects_desc"
+                android:src="@drawable/objectorange" />
+        	
+            <ImageView
+                android:id="@+id/object3Test"
+                android:onClick="testObject3"
+                style="@style/test"
+                android:contentDescription="@string/test_desc" />
+            
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/object3Text"
+            style="@style/Text_Exercise_Label"
+            android:text="@string/objectsIII"            
+            />
+        
+        <ImageView 
+            android:id="@+id/partition5"
+            android:contentDescription="@string/partition_desc"
+            style="@style/Partition"
+            />
+        
+         <LinearLayout
+            style="@style/horizontal_container"
+            android:layout_height="0dp"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/animals3Learn"
+                android:onClick="learnAnimal3"
+                style="@style/learn"
+                android:contentDescription="@string/learn_desc" />
+            
+            <ImageView
+                android:id="@+id/animal3"
+                style="@style/exercise_picture"
+                android:contentDescription="@string/objects_desc"
+                android:src="@drawable/animalorange" />
+        	
+            <ImageView
+                android:id="@+id/animal3Test"
+                android:onClick="testAnimal3"
+                style="@style/test"
+                android:contentDescription="@string/test_desc" />
+            
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/animal3Text"
+            style="@style/Text_Exercise_Label"
+            android:text="@string/animalsIII"            
+            />
+        
+        <ImageView 
+            android:id="@+id/partition6"
+            android:contentDescription="@string/partition_desc"
+            style="@style/Partition"
+            />
+        
+        <LinearLayout
+            	android:layout_height="wrap_content"
+            	android:layout_width="wrap_content"
+            	android:baselineAligned="false"
+            	android:layout_gravity="center"
+            	android:orientation="horizontal">
+            
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+                                
+        		<LinearLayout
+           	 		style="@style/horizontal_container"
+           	 		android:layout_height="0dp"
+           	 		android:layout_weight="1.0" >
+
+            		<ImageView
+                		android:id="@+id/people4Learn"
+                		android:onClick="learnPeople4"
+                		android:contentDescription="@string/learn_desc"
+                		style="@style/learn" />
+            
+            		<ImageView
+    	    			android:id="@+id/people4"
+    	    			style="@style/exercise_picture"
+    	    			android:contentDescription="@string/people_desc"
+        				android:src="@drawable/peopleorange" /> 
+        	
+            		<ImageView
+    	    			android:id="@+id/people4Test"
+    	    			android:onClick="testPeople4"
+    	        		android:contentDescription="@string/test_desc"
+    	    			style="@style/test" /> 
+            
+        		</LinearLayout>
+        		        		
+        		<TextView
+            		android:id="@+id/people4Text"
+            		style="@style/Text_Exercise_Label"
+            		android:text="@string/peopleIV"            
+           		 />
+        		
+            </LinearLayout>
+            
+            <ImageView 
+            android:id="@+id/partitionV4"
+            android:contentDescription="@string/partition_desc"
+            style="@style/Partition_vertical"
+            />
+        		
+        	<LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+        
+         		<LinearLayout
+           	 		style="@style/horizontal_container"
+           	 		android:layout_height="0dp"
+           	 		android:layout_weight="1.0" >
+
+            		<ImageView
+                		android:id="@+id/animal4Learn"
+                		android:onClick="learnAnimal4"
+                		android:contentDescription="@string/learn_desc"
+                		style="@style/learn" />
+            
+            		<ImageView
+    	    			android:id="@+id/animal4"
+    	    			style="@style/exercise_picture"
+    	    			android:contentDescription="@string/objects_desc"
+        				android:src="@drawable/animalorange" /> 
+        	
+            		<ImageView
+    	    			android:id="@+id/animal4Test"
+    	    			android:onClick="testAnimal4"
+    	        		android:contentDescription="@string/test_desc"
+    	    			style="@style/test" /> 
+            
+        		</LinearLayout>
+        		        		
+        		<TextView
+            		android:id="@+id/animal4text"
+            		style="@style/Text_Exercise_Label"
+            		android:text="@string/animalsIV"            
+           		 />
+        		
+            </LinearLayout>
+        		     		
+       	</LinearLayout>
+       	
+        <ImageView 
+            android:id="@+id/partition7"
+            android:contentDescription="@string/partition_desc"
+            style="@style/Partition"
+            />
+        
+        <LinearLayout
+            style="@style/horizontal_container"
+            android:layout_height="0dp"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/object4Learn"
+                android:onClick="learnObject4"
+                style="@style/learn"
+                android:contentDescription="@string/learn_desc" />
+            
+            <ImageView
+                android:id="@+id/object4"
+                style="@style/exercise_picture"
+                android:contentDescription="@string/objects_desc"
+                android:src="@drawable/objectorange" />
+        	
+            <ImageView
+                android:id="@+id/object4Test"
+                android:onClick="testObject4"
+                style="@style/test"
+                android:contentDescription="@string/test_desc" />
+            
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/object4Text"
+            style="@style/Text_Exercise_Label"
+            android:text="@string/objectsIV"            
+            />
+        
+        <ImageView 
+            android:id="@+id/partition8"
+            android:contentDescription="@string/partition_desc"
+            style="@style/Partition"
+            />
+        
+        <LinearLayout
+            	android:layout_height="wrap_content"
+            	android:layout_width="wrap_content"
+            	android:baselineAligned="false"
+            	android:layout_gravity="center"
+            	android:orientation="horizontal">
+            
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+                                
+        		<LinearLayout
+           	 		style="@style/horizontal_container"
+           	 		android:layout_height="0dp"
+           	 		android:layout_weight="1.0" >
+
+            		<ImageView
+                		android:id="@+id/people5Learn"
+                		android:onClick="learnPeople5"
+                		android:contentDescription="@string/learn_desc"
+                		style="@style/learn" />
+            
+            		<ImageView
+    	    			android:id="@+id/people5"
+    	    			style="@style/exercise_picture"
+    	    			android:contentDescription="@string/people_desc"
+        				android:src="@drawable/peopleorange" /> 
+        	
+            		<ImageView
+    	    			android:id="@+id/people5Test"
+    	    			android:onClick="testPeople5"
+    	        		android:contentDescription="@string/test_desc"
+    	    			style="@style/test" /> 
+            
+        		</LinearLayout>
+        		        		
+        		<TextView
+            		android:id="@+id/people5Text"
+            		style="@style/Text_Exercise_Label"
+            		android:text="@string/peopleV"            
+           		 />
+        		
+            </LinearLayout>
+            
+            <ImageView 
+            android:id="@+id/partitionV5"
+            android:contentDescription="@string/partition_desc"
+            style="@style/Partition_vertical"
+            />
+        		
+        	<LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+        
+         		<LinearLayout
+           	 		style="@style/horizontal_container"
+           	 		android:layout_height="0dp"
+           	 		android:layout_weight="1.0" >
+
+            		<ImageView
+                		android:id="@+id/object5Learn"
+                		android:onClick="learnObject5"
+                		android:contentDescription="@string/learn_desc"
+                		style="@style/learn" />
+            
+            		<ImageView
+    	    			android:id="@+id/object5"
+    	    			style="@style/exercise_picture"
+    	    			android:contentDescription="@string/objects_desc"
+        				android:src="@drawable/objectorange" /> 
+        	
+            		<ImageView
+    	    			android:id="@+id/object5Test"
+    	    			android:onClick="testObject5"
+    	        		android:contentDescription="@string/test_desc"
+    	    			style="@style/test" /> 
+            
+        		</LinearLayout>
+        		        		
+        		<TextView
+            		android:id="@+id/object5text"
+            		style="@style/Text_Exercise_Label"
+            		android:text="@string/objectsV"            
+           		 />
+        		
+            </LinearLayout>
+        		     		
+       	</LinearLayout>
+       	
+        <ImageView 
+            android:id="@+id/partition9"
+            android:contentDescription="@string/partition_desc"
+            style="@style/Partition"
+            />
+        
+        <LinearLayout
+            style="@style/horizontal_container"
+            android:layout_height="0dp"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/animal5Learn"
+                android:onClick="learnAnimal5"
+                style="@style/learn"
+                android:contentDescription="@string/learn_desc" />
+            
+            <ImageView
+                android:id="@+id/animal5"
+                style="@style/exercise_picture"
+                android:contentDescription="@string/animals_desc"
+                android:src="@drawable/animalorange" />
+        	
+            <ImageView
+                android:id="@+id/animal5Test"
+                android:onClick="testAnimal5"
+                style="@style/test"
+                android:contentDescription="@string/test_desc" />
+            
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/animal5text"
+            style="@style/Text_Exercise_Label"
+            android:text="@string/animalsV"            
+            />
+        
+        <ImageView 
+            android:id="@+id/partition10"
+            android:contentDescription="@string/partition_desc"
+            style="@style/Partition"
+            />
+        
+    </LinearLayout>
+
+ </ScrollView><!-- From: file:/Users/tomasz/Documents/CollectiveNouns/CollectiveNouns/res/layout/fragment_exercises.xml -->
