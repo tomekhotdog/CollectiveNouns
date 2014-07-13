@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:id="@+id/q1_layout"
+    android:background="@color/mBlue_light_very">
     
   <LinearLayout
       android:layout_width="match_parent"
@@ -219,8 +221,7 @@
             android:id="@+id/check"
             style="@style/check_button"
             android:onClick="q1Check"
-            android:text="@string/check"
-             />
+            android:text="@string/check" />
 
     </LinearLayout>
     

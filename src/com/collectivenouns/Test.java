@@ -49,15 +49,15 @@ public class Test extends Activity {
 		CURRENT_NOUN_INDEX = NOUN_NUMBER;
 		initialiseScores();
 		askQuestion();
-		
+
+        this.random = new Random();
 	}
 	
 	private void askQuestion() {
 		unsetReadyForNextQuestion();
-		random = new Random();
 		int q = random.nextInt(8);
-		int option = random.nextInt(4) + 1;
-		switch (option) {
+		int option = random.nextInt(4);
+		switch (option + 1) {
 		case 1: askQType1(NOUN_NUMBER + q);
 				break;
 		case 2: askQType2(NOUN_NUMBER + q);
@@ -201,7 +201,6 @@ public class Test extends Activity {
 	
 	private void setAnswerBoxes(int index, int questionType) {
 		int answer_index = index - NOUN_NUMBER;
-		random = new Random();
 		int a1 = random.nextInt(8); int a2 = random.nextInt(8); 
 		int a3 = random.nextInt(8); int a4 = random.nextInt(8);
 		while (a1 == answer_index) {
@@ -291,7 +290,7 @@ public class Test extends Activity {
 
 	private void setIncorrectBanner() {
 		LinearLayout background = (LinearLayout) findViewById(R.id.correction_background);
-		background.setVisibility(0);
+		background.setVisibility(View.VISIBLE);
 		background.setBackgroundColor(getResources().getColor(R.color.lightred));
 		TextView incorrect = (TextView) findViewById(R.id.Correct_Incorrect);
 		incorrect.setTextColor(getResources().getColor(R.color.darkred));
@@ -302,7 +301,7 @@ public class Test extends Activity {
 	
 	private void setCorrectBanner() {
 		LinearLayout background = (LinearLayout) findViewById(R.id.correction_background);
-		background.setVisibility(0);
+		background.setVisibility(View.VISIBLE);
 		background.setBackgroundColor(getResources().getColor(R.color.lightgreen));
 		TextView incorrect = (TextView) findViewById(R.id.Correct_Incorrect);
 		incorrect.setTextColor(getResources().getColor(R.color.green));

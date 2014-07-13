@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/grey" >
+    android:background="@color/mBlue_light_very">
     
     <Button
         android:id="@+id/randomTest"
@@ -14,7 +14,7 @@
         android:textSize="20sp"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:background="@color/blueP"
+        android:background="@color/mBlue_dark"
         android:padding="10dp"
         android:layout_margin="10dp" />
     
@@ -28,7 +28,7 @@
     <LinearLayout
         style="@style/achieved_container"
         android:orientation="vertical"
-        android:background="@color/lightgreen"
+        android:background="@color/mBlue_dark"
         android:layout_margin="10dp" >
         
         <LinearLayout
