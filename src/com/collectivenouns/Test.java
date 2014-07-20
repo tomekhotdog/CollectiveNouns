@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.graphics.SumPathEffect;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
@@ -19,6 +20,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 import android.view.KeyEvent;
+import android.widget.Toast;
 
 public class Test extends Activity {
 	
@@ -28,10 +30,10 @@ public class Test extends Activity {
 	private int QUESTION_TYPE = 0;
 	private static final int PLATINUM_TRIANGLE_THRESHOLD = 15;
 	private static final int GREEN_TRIANGLE_THRESHOLD = 12;
-	private boolean gate = true;
 	private boolean readyForNextQuestion = false;
 	private boolean homeResourceReload = false;
 	private int[] scores = new int[16];
+    private int lastQ = -1;
 	private Integer[] progress = {0, R.id.progress1, R.id.progress2, R.id.progress3,
 			R.id.progress4, R.id.progress5, R.id.progress6, R.id.progress7, R.id.progress8,
 			R.id.progress9, R.id.progress10, R.id.progress11, R.id.progress12, R.id.progress13,
@@ -55,7 +57,7 @@ public class Test extends Activity {
 	
 	private void askQuestion() {
 		unsetReadyForNextQuestion();
-		int q = random.nextInt(8);
+        int q = getQuestion();
 		int option = random.nextInt(4);
 		switch (option + 1) {
 		case 1: askQType1(NOUN_NUMBER + q);
@@ -263,6 +265,7 @@ public class Test extends Activity {
 			editor.commit();
 			// Next request to quit will reload homepage
 			homeResourceReload = true;
+            sendHighScoreToast();
 		}		
 	}
 	
@@ -592,6 +595,25 @@ public class Test extends Activity {
 		InputMethodManager mgr = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
 		mgr.showSoftInput(et,  InputMethodManager.SHOW_IMPLICIT);
 	}
+
+    private int getQuestion() {
+        random = new Random();
+        int q = random.nextInt(8);
+        if (lastQ != -1) {
+            while (q == lastQ) {
+                q = random.nextInt(8);
+            }
+        }
+        lastQ = q;
+        return q;
+    }
+
+    private void sendHighScoreToast() {
+        String text = "New Highscore!";
+        Toast mToast = Toast.makeText(getApplication(), text, Toast.LENGTH_LONG);
+        mToast.setGravity(Gravity.BOTTOM, 0, 25);
+        mToast.show();
+    }
 
 
 	

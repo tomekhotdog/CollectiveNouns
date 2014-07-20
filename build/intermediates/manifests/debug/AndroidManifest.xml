@@ -10,12 +10,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/collective_nouns_emblem"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.collectivenouns.Home"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,13 +25,12 @@
         </activity>
         <activity
             android:name="com.collectivenouns.Learn"
-            android:noHistory="true" />
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.collectivenouns.Test"
-            android:noHistory="true" />
-        <activity
-            android:name="com.collectivenouns.AnswerPopup"
-            android:theme="@style/Theme.Transparent" />
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

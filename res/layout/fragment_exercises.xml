@@ -18,7 +18,7 @@
             <ImageView
                 android:id="@+id/people1Learn"
                 style="@style/learn"
-                android:onClick="learnPeople1"
+                android:onClick="learnClick"
                 android:contentDescription="@string/learn_desc" />
             
             <ImageView
@@ -30,7 +30,7 @@
             <ImageView
                 android:id="@+id/people1Test"
                 style="@style/test"
-                android:onClick="testPeople1"
+                android:onClick="testClick"
                 android:contentDescription="@string/test_desc" />
             
         </LinearLayout>
@@ -66,7 +66,7 @@
 
             		<ImageView
                 		android:id="@+id/object1Learn"
-                		android:onClick="learnObject1"
+                		android:onClick="learnClick"
                 		android:contentDescription="@string/learn_desc"
                 		style="@style/learn" />
             
@@ -78,7 +78,7 @@
         	
             		<ImageView
     	    			android:id="@+id/object1Test"
-    	    			android:onClick="testObject1"
+    	    			android:onClick="testClick"
     	        		android:contentDescription="@string/test_desc"
     	    			style="@style/test" /> 
             
@@ -110,7 +110,7 @@
 
             		<ImageView
                 		android:id="@+id/animal1Learn"
-                		android:onClick="learnAnimal1"
+                		android:onClick="learnClick"
                 		android:contentDescription="@string/learn_desc"
                 		style="@style/learn" />
             
@@ -122,7 +122,7 @@
         	
             		<ImageView
     	    			android:id="@+id/animal1Test"
-    	    			android:onClick="testAnimal1"
+    	    			android:onClick="testClick"
     	        		android:contentDescription="@string/test_desc"
     	    			style="@style/test" /> 
             
@@ -163,7 +163,7 @@
 
             		<ImageView
                 		android:id="@+id/people2Learn"
-                		android:onClick="learnPeople2"
+                		android:onClick="learnClick"
                 		android:contentDescription="@string/learn_desc"
                 		style="@style/learn" />
             
@@ -175,7 +175,7 @@
         	
             		<ImageView
     	    			android:id="@+id/people2Test"
-    	    			android:onClick="testPeople2"
+    	    			android:onClick="testClick"
     	        		android:contentDescription="@string/test_desc"
     	    			style="@style/test" /> 
             
@@ -207,7 +207,7 @@
 
             		<ImageView
                 		android:id="@+id/animal2Learn"
-                		android:onClick="learnAnimal2"
+                		android:onClick="learnClick"
                 		android:contentDescription="@string/learn_desc"
                 		style="@style/learn" />
             
@@ -219,7 +219,7 @@
         	
             		<ImageView
     	    			android:id="@+id/animal2Test"
-    	    			android:onClick="testAnimal2"
+    	    			android:onClick="testClick"
     	        		android:contentDescription="@string/test_desc"
     	    			style="@style/test" /> 
             
@@ -260,7 +260,7 @@
 
             		<ImageView
                 		android:id="@+id/people3Learn"
-                		android:onClick="learnPeople3"
+                		android:onClick="learnClick"
                 		android:contentDescription="@string/learn_desc"
                 		style="@style/learn" />
             
@@ -272,7 +272,7 @@
         	
             		<ImageView
     	    			android:id="@+id/people3Test"
-    	    			android:onClick="testPeople3"
+    	    			android:onClick="testClick"
     	        		android:contentDescription="@string/test_desc"
     	    			style="@style/test" /> 
             
@@ -304,7 +304,7 @@
 
             		<ImageView
                 		android:id="@+id/object2Learn"
-                		android:onClick="learnObject2"
+                		android:onClick="learnClick"
                 		android:contentDescription="@string/learn_desc"
                 		style="@style/learn" />
             
@@ -316,7 +316,7 @@
         	
             		<ImageView
     	    			android:id="@+id/object2Test"
-    	    			android:onClick="testObject2"
+    	    			android:onClick="testClick"
     	        		android:contentDescription="@string/test_desc"
     	    			style="@style/test" /> 
             
@@ -345,7 +345,7 @@
 
             <ImageView
                 android:id="@+id/object3Learn"
-                android:onClick="learnObject3"
+                android:onClick="learnClick"
                 style="@style/learn"
                 android:contentDescription="@string/learn_desc" />
             
@@ -357,7 +357,7 @@
         	
             <ImageView
                 android:id="@+id/object3Test"
-                android:onClick="testObject3"
+                android:onClick="testClick"
                 style="@style/test"
                 android:contentDescription="@string/test_desc" />
             
@@ -381,8 +381,8 @@
             android:layout_weight="1.0" >
 
             <ImageView
-                android:id="@+id/animals3Learn"
-                android:onClick="learnAnimal3"
+                android:id="@+id/animal3Learn"
+                android:onClick="learnClick"
                 style="@style/learn"
                 android:contentDescription="@string/learn_desc" />
             
@@ -394,7 +394,7 @@
         	
             <ImageView
                 android:id="@+id/animal3Test"
-                android:onClick="testAnimal3"
+                android:onClick="testClick"
                 style="@style/test"
                 android:contentDescription="@string/test_desc" />
             
@@ -431,7 +431,7 @@
 
             		<ImageView
                 		android:id="@+id/people4Learn"
-                		android:onClick="learnPeople4"
+                		android:onClick="learnClick"
                 		android:contentDescription="@string/learn_desc"
                 		style="@style/learn" />
             
@@ -443,7 +443,7 @@
         	
             		<ImageView
     	    			android:id="@+id/people4Test"
-    	    			android:onClick="testPeople4"
+    	    			android:onClick="testClick"
     	        		android:contentDescription="@string/test_desc"
     	    			style="@style/test" /> 
             
@@ -475,7 +475,7 @@
 
             		<ImageView
                 		android:id="@+id/animal4Learn"
-                		android:onClick="learnAnimal4"
+                		android:onClick="learnClick"
                 		android:contentDescription="@string/learn_desc"
                 		style="@style/learn" />
             
@@ -487,7 +487,7 @@
         	
             		<ImageView
     	    			android:id="@+id/animal4Test"
-    	    			android:onClick="testAnimal4"
+    	    			android:onClick="testClick"
     	        		android:contentDescription="@string/test_desc"
     	    			style="@style/test" /> 
             
@@ -516,7 +516,7 @@
 
             <ImageView
                 android:id="@+id/object4Learn"
-                android:onClick="learnObject4"
+                android:onClick="learnClick"
                 style="@style/learn"
                 android:contentDescription="@string/learn_desc" />
             
@@ -528,7 +528,7 @@
         	
             <ImageView
                 android:id="@+id/object4Test"
-                android:onClick="testObject4"
+                android:onClick="testClick"
                 style="@style/test"
                 android:contentDescription="@string/test_desc" />
             
@@ -565,7 +565,7 @@
 
             		<ImageView
                 		android:id="@+id/people5Learn"
-                		android:onClick="learnPeople5"
+                		android:onClick="learnClick"
                 		android:contentDescription="@string/learn_desc"
                 		style="@style/learn" />
             
@@ -577,7 +577,7 @@
         	
             		<ImageView
     	    			android:id="@+id/people5Test"
-    	    			android:onClick="testPeople5"
+    	    			android:onClick="testClick"
     	        		android:contentDescription="@string/test_desc"
     	    			style="@style/test" /> 
             
@@ -609,7 +609,7 @@
 
             		<ImageView
                 		android:id="@+id/object5Learn"
-                		android:onClick="learnObject5"
+                		android:onClick="learnClick"
                 		android:contentDescription="@string/learn_desc"
                 		style="@style/learn" />
             
@@ -621,7 +621,7 @@
         	
             		<ImageView
     	    			android:id="@+id/object5Test"
-    	    			android:onClick="testObject5"
+    	    			android:onClick="testClick"
     	        		android:contentDescription="@string/test_desc"
     	    			style="@style/test" /> 
             
@@ -637,8 +637,7 @@
         		     		
        	</LinearLayout>
        	
-        <ImageView 
-            android:id="@+id/partition9"
+        <ImageView
             android:contentDescription="@string/partition_desc"
             style="@style/Partition"
             />
@@ -650,7 +649,7 @@
 
             <ImageView
                 android:id="@+id/animal5Learn"
-                android:onClick="learnAnimal5"
+                android:onClick="learnClick"
                 style="@style/learn"
                 android:contentDescription="@string/learn_desc" />
             
@@ -662,7 +661,7 @@
         	
             <ImageView
                 android:id="@+id/animal5Test"
-                android:onClick="testAnimal5"
+                android:onClick="testClick"
                 style="@style/test"
                 android:contentDescription="@string/test_desc" />
             
@@ -673,13 +672,256 @@
             style="@style/Text_Exercise_Label"
             android:text="@string/animalsV"            
             />
-        
-        <ImageView 
+
+        <ImageView
             android:id="@+id/partition10"
             android:contentDescription="@string/partition_desc"
             style="@style/Partition"
             />
-        
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:baselineAligned="false"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/horizontal_container"
+                android:layout_height="0dp"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:id="@+id/nationalities1Learn"
+                    android:onClick="learnClick"
+                    android:contentDescription="@string/learn_desc"
+                    style="@style/learn" />
+
+                <ImageView
+                    android:id="@+id/nationalities1"
+                    style="@style/exercise_picture"
+                    android:contentDescription="@string/people_desc"
+                    android:src="@drawable/peopleorange" />
+
+                <ImageView
+                    android:id="@+id/nationalities1Test"
+                    android:onClick="testClick"
+                    android:contentDescription="@string/test_desc"
+                    style="@style/test" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/nationalities1Text"
+                style="@style/Text_Exercise_Label"
+                android:text="@string/nationalitiesI"
+                />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:contentDescription="@string/partition_desc"
+            style="@style/Partition"
+            />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:baselineAligned="false"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/horizontal_container"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.0" >
+
+                    <ImageView
+                        android:id="@+id/animal6Learn"
+                        android:onClick="learnClick"
+                        android:contentDescription="@string/learn_desc"
+                        style="@style/learn" />
+
+                    <ImageView
+                        android:id="@+id/animal6"
+                        style="@style/exercise_picture"
+                        android:contentDescription="@string/people_desc"
+                        android:src="@drawable/animalorange" />
+
+                    <ImageView
+                        android:id="@+id/animal6Test"
+                        android:onClick="testClick"
+                        android:contentDescription="@string/test_desc"
+                        style="@style/test" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/animal6Text"
+                    style="@style/Text_Exercise_Label"
+                    android:text="@string/animalsVI"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:contentDescription="@string/partition_desc"
+                style="@style/Partition_vertical"
+                />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/horizontal_container"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.0" >
+
+                    <ImageView
+                        android:id="@+id/animal7Learn"
+                        android:onClick="learnClick"
+                        android:contentDescription="@string/learn_desc"
+                        style="@style/learn" />
+
+                    <ImageView
+                        android:id="@+id/animal7"
+                        style="@style/exercise_picture"
+                        android:contentDescription="@string/objects_desc"
+                        android:src="@drawable/animalorange" />
+
+                    <ImageView
+                        android:id="@+id/animal7Test"
+                        android:onClick="testClick"
+                        android:contentDescription="@string/test_desc"
+                        style="@style/test" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/animal7text"
+                    style="@style/Text_Exercise_Label"
+                    android:text="@string/animalsVII"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:contentDescription="@string/partition_desc"
+            style="@style/Partition"
+            />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:baselineAligned="false"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/horizontal_container"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.0" >
+
+                    <ImageView
+                        android:id="@+id/animal8Learn"
+                        android:onClick="learnClick"
+                        android:contentDescription="@string/learn_desc"
+                        style="@style/learn" />
+
+                    <ImageView
+                        android:id="@+id/animal85"
+                        style="@style/exercise_picture"
+                        android:contentDescription="@string/people_desc"
+                        android:src="@drawable/animalorange" />
+
+                    <ImageView
+                        android:id="@+id/animal8Test"
+                        android:onClick="testClick"
+                        android:contentDescription="@string/test_desc"
+                        style="@style/test" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/animal8Text"
+                    style="@style/Text_Exercise_Label"
+                    android:text="@string/animalsVIII"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:contentDescription="@string/partition_desc"
+                style="@style/Partition_vertical"
+                />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/horizontal_container"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.0" >
+
+                    <ImageView
+                        android:id="@+id/animal9Learn"
+                        android:onClick="learnClick"
+                        android:contentDescription="@string/learn_desc"
+                        style="@style/learn" />
+
+                    <ImageView
+                        android:id="@+id/animal9"
+                        style="@style/exercise_picture"
+                        android:contentDescription="@string/objects_desc"
+                        android:src="@drawable/animalorange" />
+
+                    <ImageView
+                        android:id="@+id/animal9Test"
+                        android:onClick="testClick"
+                        android:contentDescription="@string/test_desc"
+                        style="@style/test" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/animal9text"
+                    style="@style/Text_Exercise_Label"
+                    android:text="@string/animalsIX"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/partition9"
+            android:contentDescription="@string/partition_desc"
+            style="@style/Partition"
+            />
+
     </LinearLayout>
 
  </ScrollView>

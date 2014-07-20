@@ -15,6 +15,11 @@
     <color name="lightgreen">#D6FFB6</color>
     <color name="lightred">#F58D7A</color>
     <color name="lilacP">#FFACEC</color>
+    <color name="mBlue_dark">#0277bd</color>
+    <color name="mBlue_dark_very">#01579b</color>
+    <color name="mBlue_light">#81d4fa</color>
+    <color name="mBlue_light_very">#b3e5fc</color>
+    <color name="mBlue_normal">#03a9f4</color>
     <color name="opaque_grey">#40303030</color>
     <color name="orange">#FF9900</color>
     <color name="orangeP">#FF9797</color>
@@ -38,6 +43,7 @@
 
     <string name="A">A</string>
     <string name="An">An</string>
+    <string name="Total_Score">Total Score</string>
     <string name="achieved"><u>Achieved</u></string>
     <string name="action_settings">Settings</string>
     <string name="amber">Amber</string>
@@ -45,7 +51,11 @@
     <string name="animalsII">Animals II</string>
     <string name="animalsIII">Animals III</string>
     <string name="animalsIV">Animals IV</string>
+    <string name="animalsIX">Animals IX</string>
     <string name="animalsV">Animals V</string>
+    <string name="animalsVI">Animals VI</string>
+    <string name="animalsVII">Animals VII</string>
+    <string name="animalsVIII">Animals VIII</string>
     <string name="animals_desc">Collective nouns concerning groups of animals</string>
     <string name="app_name">CollectiveNouns</string>
     <string name="best_score">Best Score:</string>
@@ -75,10 +85,50 @@
     <string name="collective119">bunch</string>
     <string name="collective12">consternation</string>
     <string name="collective120">pantheon</string>
+    <string name="collective121">aerie</string>
+    <string name="collective122">army</string>
+    <string name="collective123">ascension</string>
+    <string name="collective124">bale</string>
+    <string name="collective125">pit</string>
+    <string name="collective126">erst</string>
+    <string name="collective127">flight</string>
+    <string name="collective128">glint</string>
+    <string name="collective129">glaring</string>
     <string name="collective13">tribe</string>
+    <string name="collective130">harem</string>
+    <string name="collective131">lounge</string>
+    <string name="collective132">muster</string>
+    <string name="collective133">nest</string>
+    <string name="collective134">parcel</string>
+    <string name="collective135">plague</string>
+    <string name="collective136">prattle</string>
+    <string name="collective137">quiver</string>
+    <string name="collective138">rhumba</string>
+    <string name="collective139">sedge</string>
     <string name="collective14">convent</string>
+    <string name="collective140">sounder</string>
+    <string name="collective141">wisdom</string>
+    <string name="collective142">storytelling</string>
+    <string name="collective143">tower</string>
+    <string name="collective144">whiteness</string>
+    <string name="collective145">walk</string>
+    <string name="collective146">wake</string>
+    <string name="collective147">yap</string>
+    <string name="collective148">gang</string>
+    <string name="collective149">gleam</string>
     <string name="collective15">posse</string>
+    <string name="collective150">covey</string>
+    <string name="collective151">circus</string>
+    <string name="collective152">marvel</string>
+    <string name="collective153">Mayflower</string>
+    <string name="collective154">pint</string>
+    <string name="collective155">savoir faire</string>
+    <string name="collective156">pound</string>
+    <string name="collective157">clan</string>
+    <string name="collective158">vendetta</string>
+    <string name="collective159">carnival</string>
     <string name="collective16">choir</string>
+    <string name="collective160">siesta</string>
     <string name="collective17">class</string>
     <string name="collective18">flock</string>
     <string name="collective19">amble</string>
@@ -200,10 +250,50 @@
     <string name="group119">flowers</string>
     <string name="group12">mothers</string>
     <string name="group120">gods</string>
+    <string name="group121">eagles</string>
+    <string name="group122">caterpillars</string>
+    <string name="group123">larks</string>
+    <string name="group124">turtles</string>
+    <string name="group125">snakes</string>
+    <string name="group126">bees</string>
+    <string name="group127">dragons</string>
+    <string name="group128">goldfish</string>
+    <string name="group129">cats</string>
     <string name="group13">natives</string>
+    <string name="group130">seals</string>
+    <string name="group131">lizards</string>
+    <string name="group132">peacocks</string>
+    <string name="group133">wasps</string>
+    <string name="group134">penguins</string>
+    <string name="group135">locusts</string>
+    <string name="group136">parrots</string>
+    <string name="group137">cobras</string>
+    <string name="group138">rattlesnakes</string>
+    <string name="group139">cranes</string>
     <string name="group14">nuns</string>
+    <string name="group140">boars</string>
+    <string name="group141">owls</string>
+    <string name="group142">ravens</string>
+    <string name="group143">giraffes</string>
+    <string name="group144">swans</string>
+    <string name="group145">snails</string>
+    <string name="group146">vultures</string>
+    <string name="group147">chihuahuas</string>
+    <string name="group148">elk</string>
+    <string name="group149">herrings</string>
     <string name="group15">police</string>
+    <string name="group150">pheasants</string>
+    <string name="group151">puffins</string>
+    <string name="group152">unicorns</string>
+    <string name="group153">Americans</string>
+    <string name="group154">Irishmen</string>
+    <string name="group155">Frenchmen</string>
+    <string name="group156">Englishmen</string>
+    <string name="group157">Scotsmen</string>
+    <string name="group158">Sicilians</string>
+    <string name="group159">Brazilians</string>
     <string name="group16">singers</string>
+    <string name="group160">Spaniards</string>
     <string name="group17">students</string>
     <string name="group18">tourists</string>
     <string name="group19">walkers</string>
@@ -254,7 +344,7 @@
     <string name="group6">friends</string>
     <string name="group60">apes</string>
     <string name="group61">beavers</string>
-    <string name="group62">baffalo</string>
+    <string name="group62">buffalo</string>
     <string name="group63">coyotes</string>
     <string name="group64">badgers</string>
     <string name="group65">elephants</string>
@@ -299,6 +389,7 @@
     <string name="learn">Learn</string>
     <string name="learn_desc">Select for Learn mode</string>
     <string name="logo_desc">Collective Nouns logo</string>
+    <string name="nationalitiesI">Nationalities I</string>
     <string name="next">Next</string>
     <string name="objectsI">Objects I</string>
     <string name="objectsII">Objects II</string>
@@ -353,8 +444,8 @@
         <item name="android:background">@color/partition_grey</item>
     </style>
 
-    <style name="Partition_vertical">
-        <item name="android:layout_width">8dp</item>
+    <style name="Partition_vertical" parent="Partition">
+        <item name="android:layout_width">1dp</item>
         <item name="android:layout_height">fill_parent</item>
     </style>
 
@@ -367,7 +458,7 @@
     </style>
 
     <style name="Text2">
-        <item name="android:textColor">@color/textColour</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:typeface">normal</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_width">wrap_content</item>
@@ -379,6 +470,7 @@
     <style name="Text_Exercise_Label" parent="Text">
         <item name="android:textSize">18sp</item>
         <item name="android:paddingBottom">7dp</item>
+        <item name="android:textColor">@color/mBlue_dark</item>
     </style>
 
     <style name="Theme.Transparent" parent="android:Theme">
@@ -402,6 +494,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:padding">10dp</item>
         <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="check_button">
@@ -409,7 +502,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">22sp</item>
-        <item name="android:background">@color/green</item>
+        <item name="android:background">@color/mBlue_dark</item>
         <item name="android:padding">18dp</item>
     </style>
 
@@ -427,8 +520,8 @@
     </style>
 
     <style name="learn" parent="learn_test">
-        <item name="android:layout_marginRight">-20dp</item>
-        <item name="android:src">@drawable/learn</item>
+        <item name="android:layout_marginRight">-15dp</item>
+        <item name="android:src">@drawable/learn2</item>
         <item name="android:contentDescription">@string/learn_desc</item>
     </style>
 
@@ -454,7 +547,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">5dp</item>
         <item name="android:layout_marginBottom">15dp</item>
-        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="scoreBox">
@@ -468,8 +561,8 @@
     </style>
 
     <style name="test" parent="learn_test">
-        <item name="android:layout_marginLeft">-19dp</item>
-        <item name="android:src">@drawable/test</item>
+        <item name="android:layout_marginLeft">-15dp</item>
+        <item name="android:src">@drawable/test2</item>
         <item name="android:contentDescription">@string/test_desc</item>
     </style>
 

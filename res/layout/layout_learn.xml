@@ -79,11 +79,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:gravity="center"
         android:background="@color/partition_grey"
         android:layout_marginTop="12dp"
         android:layout_marginBottom="20dp"
         android:paddingTop="80dp"
-        android:paddingBottom="80dp" >
+        android:paddingBottom="80dp">
         
        <TextView
         android:id="@+id/a"

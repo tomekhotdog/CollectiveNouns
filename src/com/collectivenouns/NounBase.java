@@ -27,6 +27,14 @@ public class NounBase {
 			R.string.group106, R.string.group107, R.string.group108, R.string.group109, R.string.group110,
 			R.string.group111, R.string.group112, R.string.group113, R.string.group114, R.string.group115,
 			R.string.group116, R.string.group117, R.string.group118, R.string.group119, R.string.group120,
+            R.string.group121, R.string.group122, R.string.group123, R.string.group124, R.string.group125,
+            R.string.group126, R.string.group127, R.string.group128, R.string.group129, R.string.group130,
+            R.string.group131, R.string.group132, R.string.group133, R.string.group134, R.string.group135,
+            R.string.group136, R.string.group137, R.string.group138, R.string.group139, R.string.group140,
+            R.string.group141, R.string.group142, R.string.group143, R.string.group144, R.string.group145,
+            R.string.group146, R.string.group147, R.string.group148, R.string.group149, R.string.group150,
+            R.string.group151, R.string.group152, R.string.group153, R.string.group154, R.string.group155,
+            R.string.group156, R.string.group157, R.string.group158, R.string.group159, R.string.group160,
 		};
 		
 		static Integer[] collectives = {
@@ -53,7 +61,15 @@ public class NounBase {
 				R.string.collective101, R.string.collective102, R.string.collective103, R.string.collective104, R.string.collective105,
 				R.string.collective106, R.string.collective107, R.string.collective108, R.string.collective109, R.string.collective110,
 				R.string.collective111, R.string.collective112, R.string.collective113, R.string.collective114, R.string.collective115,
-				R.string.collective116, R.string.collective117, R.string.collective118, R.string.collective119, R.string.collective120
+				R.string.collective116, R.string.collective117, R.string.collective118, R.string.collective119, R.string.collective120,
+                R.string.collective121, R.string.collective122, R.string.collective123, R.string.collective124, R.string.collective125,
+                R.string.collective126, R.string.collective127, R.string.collective128, R.string.collective129, R.string.collective130,
+                R.string.collective131, R.string.collective132, R.string.collective133, R.string.collective134, R.string.collective135,
+                R.string.collective136, R.string.collective137, R.string.collective138, R.string.collective139, R.string.collective140,
+                R.string.collective141, R.string.collective142, R.string.collective143, R.string.collective144, R.string.collective145,
+                R.string.collective146, R.string.collective147, R.string.collective148, R.string.collective149, R.string.collective150,
+                R.string.collective151, R.string.collective152, R.string.collective153, R.string.collective154, R.string.collective155,
+                R.string.collective156, R.string.collective157, R.string.collective158, R.string.collective159, R.string.collective160
 		};
 
 }

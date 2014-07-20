@@ -3,9 +3,11 @@ package com.collectivenouns;
 import java.util.Locale;
 import java.util.Random;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -14,10 +16,12 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Home extends FragmentActivity {
 	
@@ -28,9 +32,12 @@ public class Home extends FragmentActivity {
 	private final static int ANIMAL4NUMBER = 64; private final static int ANIMAL5NUMBER = 72;
 	private final static int OBJECT1NUMBER = 80; private final static int OBJECT2NUMBER = 88;
 	private final static int OBJECT3NUMBER = 96; private final static int OBJECT4NUMBER = 104;
-	private final static int OBJECT5NUMBER = 112;
+	private final static int OBJECT5NUMBER = 112; private final static int ANIMAL6NUMBER = 120;
+    private final static int ANIMAL7NUMBER = 128; private final static int ANIMAL8NUMBER = 136;
+    private final static int ANIMAL9NUMBER = 144; private final static int NATIONALITIES1NUMBER = 152;
 
-	/**
+
+    /**
 	 * The {@link android.support.v4.view.PagerAdapter} that will provide
 	 * fragments for each of the sections. We use a
 	 * {@link android.support.v4.app.FragmentPagerAdapter} derivative, which
@@ -68,7 +75,17 @@ public class Home extends FragmentActivity {
 		return true;
 	}
 
-	/**
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()) {
+            case R.id.Feedback:
+                sendEmailIntent();
+                break;
+        }
+        return true;
+    }
+
+    /**
 	 * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
 	 * one of the sections/tabs/pages.
 	 */
@@ -97,18 +114,15 @@ public class Home extends FragmentActivity {
 			case 1 :
 				// Exercises fragment
 				return new ExercisesFragment();
-			case 2 :
-				// About fragment
-				return new AboutFragment();
 			}
-			
+
 			return null;
 		}
 
 		@Override
 		public int getCount() {
 			// Show 3 total pages.
-			return 3;
+			return 2;
 		}
 
 		@Override
@@ -119,8 +133,6 @@ public class Home extends FragmentActivity {
 				return getString(R.string.title_section1).toUpperCase(l);
 			case 1:
 				return getString(R.string.title_section2).toUpperCase(l);
-			case 2:
-				return getString(R.string.title_section3).toUpperCase(l);
 			}
 			return null;
 		}
@@ -153,97 +165,140 @@ public class Home extends FragmentActivity {
 		}
 	}
 
-	public void learnPeople1(View v) {
-		startLearnIntent(PEOPLE1NUMBER);
-	}
-	public void learnPeople2(View v) {
-		startLearnIntent(PEOPLE2NUMBER);
-	}
-	public void learnPeople3(View v) {
-		startLearnIntent(PEOPLE3NUMBER);
-	}
-	public void learnPeople4(View v) {
-		startLearnIntent(PEOPLE4NUMBER);
-	}
-	public void learnPeople5(View v) {
-		startLearnIntent(PEOPLE5NUMBER);
-	}
-	public void learnAnimal1(View v) {
-		startLearnIntent(ANIMAL1NUMBER);
-	}
-	public void learnAnimal2(View v) {
-		startLearnIntent(ANIMAL2NUMBER);
-	}
-	public void learnAnimal3(View v) {
-		startLearnIntent(ANIMAL3NUMBER);
-	}
-	public void learnAnimal4(View v) {
-		startLearnIntent(ANIMAL4NUMBER);
-	}
-	public void learnAnimal5(View v) {
-		startLearnIntent(ANIMAL5NUMBER);
-	}
-	public void learnObject1(View v) {
-		startLearnIntent(OBJECT1NUMBER);
-	}
-	public void learnObject2(View v) {
-		startLearnIntent(OBJECT2NUMBER);
-	}
-	public void learnObject3(View v) {
-		startLearnIntent(OBJECT3NUMBER);
-	}
-	public void learnObject4(View v) {
-		startLearnIntent(OBJECT4NUMBER);
-	}
-	public void learnObject5(View v) {
-		startLearnIntent(OBJECT5NUMBER);
-	}
-	public void testPeople1(View v) {
-		startTestIntent(PEOPLE1NUMBER);
-	}
-	public void testPeople2(View v) {
-		startTestIntent(PEOPLE2NUMBER);
-	}
-	public void testPeople3(View v) {
-		startTestIntent(PEOPLE3NUMBER);
-	}
-	public void testPeople4(View v) {
-		startTestIntent(PEOPLE4NUMBER);
-	}
-	public void testPeople5(View v) {
-		startTestIntent(PEOPLE5NUMBER);
-	}
-	public void testAnimal1(View v) {
-		startTestIntent(ANIMAL1NUMBER);
-	}
-	public void testAnimal2(View v) {
-		startTestIntent(ANIMAL2NUMBER);
-	}
-	public void testAnimal3(View v) {
-		startTestIntent(ANIMAL3NUMBER);
-	}
-	public void testAnimal4(View v) {
-		startTestIntent(ANIMAL4NUMBER);
-	}
-	public void testAnimal5(View v) {
-		startTestIntent(ANIMAL5NUMBER);
-	}
-	public void testObject1(View v) {
-		startTestIntent(OBJECT1NUMBER);
-	}
-	public void testObject2(View v) {
-		startTestIntent(OBJECT2NUMBER);
-	}
-	public void testObject3(View v) {
-		startTestIntent(OBJECT3NUMBER);
-	}
-	public void testObject4(View v) {
-		startTestIntent(OBJECT4NUMBER);
-	}
-	public void testObject5(View v) {
-		startTestIntent(OBJECT5NUMBER);
-	}
-	
+    public void learnClick(View v) {
+        int mLearnSelection = 0;
+        switch(v.getId()) {
+            case R.id.people1Learn:
+                mLearnSelection = PEOPLE1NUMBER;
+                break;
+            case R.id.people2Learn:
+                mLearnSelection = PEOPLE2NUMBER;
+                break;
+            case R.id.people3Learn:
+                mLearnSelection = PEOPLE3NUMBER;
+                break;
+            case R.id.people4Learn:
+                mLearnSelection = PEOPLE4NUMBER;
+                break;
+            case R.id.people5Learn:
+                mLearnSelection = PEOPLE5NUMBER;
+                break;
+            case R.id.animal1Learn:
+                mLearnSelection = ANIMAL1NUMBER;
+                break;
+            case R.id.animal2Learn:
+                mLearnSelection = ANIMAL2NUMBER;
+                break;
+            case R.id.animal3Learn:
+                mLearnSelection = ANIMAL3NUMBER;
+                break;
+            case R.id.animal4Learn:
+                mLearnSelection = ANIMAL4NUMBER;
+                break;
+            case R.id.animal5Learn:
+                mLearnSelection = ANIMAL5NUMBER;
+                break;
+            case R.id.object1Learn:
+                mLearnSelection = OBJECT1NUMBER;
+                break;
+            case R.id.object2Learn:
+                mLearnSelection = OBJECT2NUMBER;
+                break;
+            case R.id.object3Learn:
+                mLearnSelection = OBJECT3NUMBER;
+                break;
+            case R.id.object4Learn:
+                mLearnSelection = OBJECT4NUMBER;
+                break;
+            case R.id.object5Learn:
+                mLearnSelection = OBJECT5NUMBER;
+                break;
+            case R.id.nationalities1Learn:
+                mLearnSelection = NATIONALITIES1NUMBER;
+                break;
+            case R.id.animal6Learn:
+                mLearnSelection = ANIMAL6NUMBER;
+                break;
+            case R.id.animal7Learn:
+                mLearnSelection = ANIMAL7NUMBER;
+                break;
+            case R.id.animal8Learn:
+                mLearnSelection = ANIMAL8NUMBER;
+                break;
+            case R.id.animal9Learn:
+                mLearnSelection = ANIMAL9NUMBER;
+                break;
+        }
+        startLearnIntent(mLearnSelection);
+    }
+
+    public void testClick(View v) {
+        int mLearnSelection = 0;
+        switch(v.getId()) {
+            case R.id.people1Test:
+                mLearnSelection = PEOPLE1NUMBER;
+                break;
+            case R.id.people2Test:
+                mLearnSelection = PEOPLE2NUMBER;
+                break;
+            case R.id.people3Test:
+                mLearnSelection = PEOPLE3NUMBER;
+                break;
+            case R.id.people4Test:
+                mLearnSelection = PEOPLE4NUMBER;
+                break;
+            case R.id.people5Test:
+                mLearnSelection = PEOPLE5NUMBER;
+                break;
+            case R.id.animal1Test:
+                mLearnSelection = ANIMAL1NUMBER;
+                break;
+            case R.id.animal2Test:
+                mLearnSelection = ANIMAL2NUMBER;
+                break;
+            case R.id.animal3Test:
+                mLearnSelection = ANIMAL3NUMBER;
+                break;
+            case R.id.animal4Test:
+                mLearnSelection = ANIMAL4NUMBER;
+                break;
+            case R.id.animal5Test:
+                mLearnSelection = ANIMAL5NUMBER;
+                break;
+            case R.id.object1Test:
+                mLearnSelection = OBJECT1NUMBER;
+                break;
+            case R.id.object2Test:
+                mLearnSelection = OBJECT2NUMBER;
+                break;
+            case R.id.object3Test:
+                mLearnSelection = OBJECT3NUMBER;
+                break;
+            case R.id.object4Test:
+                mLearnSelection = OBJECT4NUMBER;
+                break;
+            case R.id.object5Test:
+                mLearnSelection = OBJECT5NUMBER;
+                break;
+            case R.id.nationalities1Test:
+                mLearnSelection = NATIONALITIES1NUMBER;
+                break;
+            case R.id.animal6Test:
+                mLearnSelection = ANIMAL6NUMBER;
+                break;
+            case R.id.animal7Test:
+                mLearnSelection = ANIMAL7NUMBER;
+                break;
+            case R.id.animal8Test:
+                mLearnSelection = ANIMAL8NUMBER;
+                break;
+            case R.id.animal9Test:
+                mLearnSelection = ANIMAL9NUMBER;
+                break;
+        }
+        startTestIntent(mLearnSelection);
+    }
+
 	private void startLearnIntent(int NounNumber) {
 		Intent intent_learn = new Intent(getApplicationContext(), Learn.class);
 		intent_learn.putExtra("NounNumber", NounNumber);
@@ -259,5 +314,30 @@ public class Home extends FragmentActivity {
 		int selection = random.nextInt(15);
 		startTestIntent(selection * 8);
 	}
+    public void iconClick(View v) {
+        TextView score = (TextView) findViewById(R.id.TotalScore); TextView posScore = (TextView) findViewById(R.id.TotalPossibleScore);
+        String scoreText = score.getText().toString(); String posText = posScore.getText().toString();
+        int mScore = Integer.valueOf(scoreText); int mPos = Integer.valueOf(posText);
+        if(mScore == mPos) {
+            Context context = getApplication();
+            String text = "Ire, you know I won't find another like you. T";
+            Toast.makeText(context, text, Toast.LENGTH_LONG).show();
+        }
+    }
+    public void sendEmailIntent() {
+        Intent i = new Intent(Intent.ACTION_SEND);
+        i.setType("message/rfc822");
+        i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"tomek.szymaniec@gmail.com"});
+        i.putExtra(Intent.EXTRA_SUBJECT, "CollectiveNouns Feedback");
+
+        String deviceInfo = "("+Build.MANUFACTURER+", "+Build.MODEL+","+Build.DISPLAY+","+Build.VERSION.SDK_INT+")\n\n";
+
+        i.putExtra(Intent.EXTRA_TEXT   , deviceInfo + "");
+        try {
+            startActivity(Intent.createChooser(i, "Sending Email..."));
+        } catch (android.content.ActivityNotFoundException ex) {
+            Toast.makeText(Home.this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
+        }
+    }
 
 }
