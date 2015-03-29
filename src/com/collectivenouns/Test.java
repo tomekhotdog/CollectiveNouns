@@ -7,8 +7,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.database.Cursor;
 import android.graphics.SumPathEffect;
 import android.os.Bundle;
+import android.provider.ContactsContract;
+import android.text.Layout;
 import android.view.Gravity;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -22,8 +25,12 @@ import android.widget.TextView.OnEditorActionListener;
 import android.view.KeyEvent;
 import android.widget.Toast;
 
+import com.collectivenouns.Utils.DatabaseHelper;
+
 public class Test extends Activity {
-	
+
+    public static final int NUMBER_QUESTIONS = 8;
+
 	private int NOUN_NUMBER;
 	private int CURRENT_NOUN_INDEX;
 	private int CURRENT_QUESTION = 0;
@@ -41,6 +48,9 @@ public class Test extends Activity {
 	Random random;
 	SharedPreferences prefs;
 	Editor editor;
+
+    private String[] nouns = new String[NUMBER_QUESTIONS];
+    private String[] groups = new String[NUMBER_QUESTIONS];
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -49,69 +59,69 @@ public class Test extends Activity {
 		Bundle extras = getIntent().getExtras();
 		NOUN_NUMBER = extras.getInt("NounNumber");
 		CURRENT_NOUN_INDEX = NOUN_NUMBER;
+
+        //TODO: extra should include category and exercise - db doesn't work atm
+        getNounsAndGroups(1, 1);
+
 		initialiseScores();
 		askQuestion();
 
         this.random = new Random();
 	}
-	
-	private void askQuestion() {
+
+    private void getNounsAndGroups(int category, int exercise) {
+        Cursor c = DatabaseHelper.getInstance(this).getQuestions(category, exercise);
+        while(c.moveToNext()) {
+            System.out.println(c.getString(c.getColumnIndex(DatabaseHelper.NOUN)));
+        }
+    }
+
+    private void askQuestion() {
 		unsetReadyForNextQuestion();
         int q = getQuestion();
 		int option = random.nextInt(4);
-		switch (option + 1) {
-		case 1: askQType1(NOUN_NUMBER + q);
-				break;
-		case 2: askQType2(NOUN_NUMBER + q);
-				break;
-		case 3: askQType3(NOUN_NUMBER + q);
-			break;
-		case 4: askQType4(NOUN_NUMBER + q);
-			break;
-		}
-	}
-	
-	private void askQType1(int index) {
-		QUESTION_TYPE = 1;
-		CURRENT_NOUN_INDEX = index;
-		setContentView(R.layout.layout_questiontype1);
-		setProgressBoxes();
-		TextView group = (TextView) findViewById(R.id.group);
-		group.setText(NounBase.groups[index]);
-		setBannerInvisible();
-		setAnswerBoxes(index, 1);
-	}
-	
-	private void askQType2(int index) {
-		QUESTION_TYPE = 2;
-		CURRENT_NOUN_INDEX = index;
-		setContentView(R.layout.layout_questiontype2);
-		setProgressBoxes();
-		TextView group = (TextView) findViewById(R.id.collective_noun);
-		group.setText(NounBase.collectives[index]);
-		setBannerInvisible();
-		setAnswerBoxes(index, 2);
+        int qType = option + 1;
+        setQ(qType, NOUN_NUMBER + q);
 	}
 
-	private void askQType3(int index) {
-		CURRENT_NOUN_INDEX = index;
-     	setContentView(R.layout.layout_questiontype3);
-     	setProgressBoxes();
-		TextView group = (TextView) findViewById(R.id.group);
-		group.setText(NounBase.groups[index]);
-		setBannerInvisible();
-		setTextEditorListener();
-	}
-	
-	private void askQType4(int index) {
-		CURRENT_NOUN_INDEX = index;
-		setContentView(R.layout.layout_questiontype4);
-		setProgressBoxes();
-		TextView collective = (TextView) findViewById(R.id.collective_noun);
-		collective.setText(NounBase.collectives[index]);
-		setBannerInvisible();
-		setTextEditorListener();
-	}
+
+    private void setQ(int question, int index) {
+        CURRENT_NOUN_INDEX = index;
+        TextView question_text;
+        switch(question) {
+            case 1:
+                QUESTION_TYPE = 1;
+                setContentView(R.layout.layout_questiontype1);
+                question_text = (TextView) findViewById(R.id.group);
+                question_text.setText(NounBase.groups[index]);
+                setAnswerBoxes(index, question);
+                break;
+            case 2:
+                QUESTION_TYPE = 2;
+                setContentView(R.layout.layout_questiontype2);
+                question_text = (TextView) findViewById(R.id.collective_noun);
+                question_text.setText(NounBase.collectives[index]);
+                setAnswerBoxes(index, question);
+                break;
+            case 3:
+                QUESTION_TYPE = 3;
+                setContentView(R.layout.layout_questiontype3);
+                question_text = (TextView) findViewById(R.id.group);
+                question_text.setText(NounBase.groups[index]);
+                setTextEditorListener();
+                break;
+            case 4:
+                QUESTION_TYPE = 4;
+                setContentView(R.layout.layout_questiontype4);
+                question_text = (TextView) findViewById(R.id.collective_noun);
+                question_text.setText(NounBase.collectives[index]);
+                setTextEditorListener();
+                break;
+        }
+        setProgressBoxes();
+        setBannerInvisible();
+
+    }
 	
 	public void q1Check(View v) {
 		switchCheck_NextText();

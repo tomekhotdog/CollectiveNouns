@@ -320,7 +320,7 @@ public class Home extends FragmentActivity {
         int mScore = Integer.valueOf(scoreText); int mPos = Integer.valueOf(posText);
         if(mScore == mPos) {
             Context context = getApplication();
-            String text = "Ire, you know I won't find another like you. T";
+            String text = "";
             Toast.makeText(context, text, Toast.LENGTH_LONG).show();
         }
     }
