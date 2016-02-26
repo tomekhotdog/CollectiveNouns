@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<pre-dex-items>
+<items version="2" >
 
     <item
-        dex="/Users/tomasz/Documents/CollectiveNouns/CollectiveNouns/build/intermediates/pre-dexed/debug/android-support-v4-1f9107e0d50274e91d05136b38f1ce2d79618fdf.jar"
-        jar="/Users/tomasz/Documents/CollectiveNouns/CollectiveNouns/libs/android-support-v4.jar"
+        jar="/Users/Tomasz/Documents/AndroidProjects/CollectiveNouns/libs/android-support-v4.jar"
         jumboMode="false"
-        revision="19.1.0"
-        sha1="db0f122c99ef9f90dbab3fada6d191f2880cbb8e"/>
+        revision="23.0.2"
+        sha1="db0f122c99ef9f90dbab3fada6d191f2880cbb8e">
+        <dex dex="/Users/Tomasz/Documents/AndroidProjects/CollectiveNouns/build/intermediates/pre-dexed/debug/android-support-v4-92ba3aff35813c922d1fad626fdd54e665d30509.jar" />
+    </item>
 
-</pre-dex-items>
+</items>

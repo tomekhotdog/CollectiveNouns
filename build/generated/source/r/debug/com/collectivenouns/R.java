@@ -52,21 +52,19 @@ public final class R {
         public static final int collective_nouns_emblem=0x7f020003;
         public static final int greentriangle=0x7f020004;
         public static final int ic_launcher=0x7f020005;
-        public static final int learn=0x7f020006;
-        public static final int learn2=0x7f020007;
-        public static final int objectgreen=0x7f020008;
-        public static final int objectorange=0x7f020009;
-        public static final int objectplatinum=0x7f02000a;
-        public static final int orangetriangle=0x7f02000b;
-        public static final int peoplegreen=0x7f02000c;
-        public static final int peopleorange=0x7f02000d;
-        public static final int peopleplatinum=0x7f02000e;
-        public static final int plattriangle=0x7f02000f;
-        public static final int progressbox=0x7f020010;
-        public static final int progressboxfilled=0x7f020011;
-        public static final int progressboxfilledred=0x7f020012;
-        public static final int test=0x7f020013;
-        public static final int test2=0x7f020014;
+        public static final int learn2=0x7f020006;
+        public static final int objectgreen=0x7f020007;
+        public static final int objectorange=0x7f020008;
+        public static final int objectplatinum=0x7f020009;
+        public static final int orangetriangle=0x7f02000a;
+        public static final int peoplegreen=0x7f02000b;
+        public static final int peopleorange=0x7f02000c;
+        public static final int peopleplatinum=0x7f02000d;
+        public static final int plattriangle=0x7f02000e;
+        public static final int progressbox=0x7f02000f;
+        public static final int progressboxfilled=0x7f020010;
+        public static final int progressboxfilledred=0x7f020011;
+        public static final int test2=0x7f020012;
     }
     public static final class id {
         public static final int Correct_Incorrect=0x7f09008b;

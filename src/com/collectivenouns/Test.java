@@ -60,21 +60,11 @@ public class Test extends Activity {
 		NOUN_NUMBER = extras.getInt("NounNumber");
 		CURRENT_NOUN_INDEX = NOUN_NUMBER;
 
-        //TODO: extra should include category and exercise - db doesn't work atm
-        getNounsAndGroups(1, 1);
-
 		initialiseScores();
 		askQuestion();
 
         this.random = new Random();
 	}
-
-    private void getNounsAndGroups(int category, int exercise) {
-        Cursor c = DatabaseHelper.getInstance(this).getQuestions(category, exercise);
-        while(c.moveToNext()) {
-            System.out.println(c.getString(c.getColumnIndex(DatabaseHelper.NOUN)));
-        }
-    }
 
     private void askQuestion() {
 		unsetReadyForNextQuestion();
