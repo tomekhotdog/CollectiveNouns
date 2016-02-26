@@ -37,9 +37,9 @@ public class InternalDbContract {
         return CONTENT_URI.buildUpon().appendPath(DatabaseStrings.WORDS_TABLE_NAME).build();
     }
 
-    public static int getCategoryID(Uri uri) {
+    public static String getCategoryID(Uri uri) {
         // TODO: more general solution, this only works for URI from method queryForWords(int category)
-        return Integer.valueOf(uri.getLastPathSegment());
+        return uri.getLastPathSegment();
     }
 
     public static int getCategoryEntry(Uri uri) {

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/Tomasz/Documents/AndroidProjects/CollectiveNouns/assets"><file name="style.css" path="/Users/Tomasz/Documents/AndroidProjects/CollectiveNouns/assets/style.css"/></source></dataSet><dataSet config="release"><source path="/Users/Tomasz/Documents/AndroidProjects/CollectiveNouns/build-types/release/assets"/></dataSet></merger>

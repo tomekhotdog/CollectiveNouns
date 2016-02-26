@@ -9,7 +9,7 @@ public class DatabaseStrings {
     public static final String WORDS_TABLE_NAME = "words_table";
 
     public static final String NOUN = "noun";
-    public static final String GROUP = "group";
+    public static final String GROUP = "noun_group";
     public static final String CATEGORY = "category";
     public static final String CATEGORY_ENTRY = "category_entry";
 

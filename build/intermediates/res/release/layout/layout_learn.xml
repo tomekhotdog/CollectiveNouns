@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mBlue_light_very">
+    
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center" >
+    
+
+    <Button
+        android:id="@+id/quit"
+        style="@style/quit_button"
+        android:onClick="quit"
+        android:text="@string/quit" />
+    
+    <Button 
+        android:id="@+id/test_out"
+        style="@style/quit_button"
+        android:onClick="testOut"
+        android:text="@string/test_out" />
+    
+    </LinearLayout>  
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/progress1"
+            style="@style/progressBox"
+            android:contentDescription="@string/progress_desc"
+            android:src="@drawable/progressboxfilled" />
+        <ImageView
+            android:id="@+id/progress2"
+            style="@style/progressBox"
+            android:contentDescription="@string/progress_desc"
+            android:src="@drawable/progressbox" />
+        <ImageView
+            android:id="@+id/progress3"
+            style="@style/progressBox"
+            android:contentDescription="@string/progress_desc"
+            android:src="@drawable/progressbox" />
+        <ImageView
+            android:id="@+id/progress4"
+            style="@style/progressBox"
+            android:contentDescription="@string/progress_desc"
+            android:src="@drawable/progressbox" />
+        <ImageView
+            android:id="@+id/progress5"
+            style="@style/progressBox"
+            android:contentDescription="@string/progress_desc"
+            android:src="@drawable/progressbox" />
+        <ImageView
+            android:id="@+id/progress6"
+            style="@style/progressBox"
+            android:contentDescription="@string/progress_desc"
+            android:src="@drawable/progressbox" />
+        <ImageView
+            android:id="@+id/progress7"
+            style="@style/progressBox"
+            android:contentDescription="@string/progress_desc"
+            android:src="@drawable/progressbox" />
+        <ImageView
+            android:id="@+id/progress8"
+            style="@style/progressBox"
+            android:contentDescription="@string/progress_desc"
+            android:src="@drawable/progressbox" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/partition_grey"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="80dp"
+        android:paddingBottom="80dp">
+        
+       <TextView
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/A"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/collective_noun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:textColor="@color/orange"
+        android:text="@string/collective1"
+        android:textStyle="bold|italic"
+        android:textAppearance="?android:attr/textAppearanceLarge" /> 
+        
+    <TextView
+        android:id="@+id/of"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:text="@string/of"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/orange"
+        android:text="@string/group1"
+        android:textStyle="bold|italic"
+        android:textAppearance="?android:attr/textAppearanceLarge" /> 
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/previous"
+            style="@style/quit_button"
+            android:onClick="PreviousNoun"
+            android:text="@string/previous" />
+
+        <Button
+            android:id="@+id/next"
+            style="@style/quit_button"
+            android:onClick="NextNoun"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:text="@string/next" />
+
+    </LinearLayout>
+
+</LinearLayout>
+<!-- From: file:/Users/Tomasz/Documents/AndroidProjects/CollectiveNouns/res/layout/layout_learn.xml -->

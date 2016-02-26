@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/test_complete_layout"
+    android:background="@color/mBlue_light_very">
+    
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center" >
+
+        <Button
+            android:id="@+id/learn"
+            style="@style/quit_button"
+            android:onClick="learn"
+            android:text="@string/learn" />
+    
+    <Button 
+        android:id="@+id/test_out"
+        style="@style/quit_button"
+        android:onClick="testOut"
+        android:text="@string/test_out" />
+    
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/test_complete_text"
+        style="@style/Text_Exercise_Label"
+        android:text="@string/test_complete"
+        android:textSize="20sp"  />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:layout_margin="10dp"
+        android:background="@color/mBlue_dark"
+        >
+        
+        <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center" >
+            
+            <TextView
+                android:id="@+id/score"
+                style="@style/Text2"
+                android:text="@string/score" />
+            <TextView
+                android:id="@+id/achieved_score"
+                style="@style/Text2"
+                android:text="@string/example_score"
+                android:layout_marginRight="-12dp" />
+            <TextView
+                android:id="@+id/out_of_15"
+                style="@style/Text2"
+                android:text="@string/out_of_15"    />         
+            
+        </LinearLayout>
+        
+        <ImageView
+            android:id="@+id/current_score_img"
+            style="@style/scoreBox"
+            android:contentDescription="@string/progress_desc"
+            android:src="@drawable/orangetriangle"
+            android:layout_gravity="center" />
+        
+        <LinearLayout
+      		android:layout_width="match_parent"
+      		android:layout_height="wrap_content"
+      		android:orientation="horizontal"
+     		android:gravity="center" >
+            
+            <TextView
+                android:id="@+id/best_score"
+                style="@style/Text2"
+                android:text="@string/best_score" />
+            <TextView
+                android:id="@+id/achieved_achieved_score"
+                style="@style/Text2"
+                android:text="@string/example_score"
+                android:layout_marginRight="-12dp" />
+            <TextView
+                android:id="@+id/out_of_15_2"
+                style="@style/Text2"
+                android:text="@string/out_of_15"    />         
+            
+        </LinearLayout>
+        
+        <ImageView
+            android:id="@+id/best_score_img"
+            style="@style/scoreBox"
+            android:contentDescription="@string/progress_desc"
+            android:src="@drawable/orangetriangle"
+            android:layout_gravity="center" />
+        
+        
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/continue_button"
+        style="@style/check_button"
+        android:text="@string/contin"
+        android:layout_margin="10dp"
+        android:onClick="quit"
+         />
+    
+       
+
+</LinearLayout>
+<!-- From: file:/Users/Tomasz/Documents/AndroidProjects/CollectiveNouns/res/layout/layout_test_complete.xml -->

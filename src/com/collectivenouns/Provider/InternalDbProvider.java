@@ -36,6 +36,7 @@ public class InternalDbProvider extends ContentProvider {
     }
 
     public InternalDbProvider(Context context) { this.mContext = context; }
+    public InternalDbProvider() { this.mContext = getContext(); }
 
     private SQLiteDatabase getDatabase(boolean writable) {
         if (mDatabase == null || !mDatabase.isOpen()) {
@@ -61,7 +62,12 @@ public class InternalDbProvider extends ContentProvider {
 
         switch (URI_MATCHER.match(uri)) {
             case WORDS_BY_CATEGORY:
-                //TODO: do stuff;
+                String query = InternalDbContract.getCategoryID(uri);
+                String[] args = {query};
+                Log.d(TAG, "querying Words by Category: " + query);
+                cursor = getDatabase(false).query(
+                        TABLE_WORDS, InternalDbContract.PROJECTION_WORDS, DatabaseStrings.CATEGORY + "=?", args, null, null, sortOrder);
+                break;
         }
 
         return cursor;

@@ -25,8 +25,6 @@ import android.widget.TextView.OnEditorActionListener;
 import android.view.KeyEvent;
 import android.widget.Toast;
 
-import com.collectivenouns.Utils.DatabaseHelper;
-
 public class Test extends Activity {
 
     public static final int NUMBER_QUESTIONS = 8;
